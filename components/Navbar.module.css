@@ -78,8 +78,11 @@
   box-shadow: 0 0 6px var(--neon-cyan);
 }
 
-.link:hover { color: var(--neon-cyan); }
+.link:hover { color: #ffffff; }
 .link:hover::after { width: 100%; }
+
+.linkActive { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0, 245, 255, 0.9), 0 0 20px rgba(0, 245, 255, 0.5); }
+.linkActive::after { width: 100%; }
 
 .linkNum {
   color: var(--neon-magenta);
@@ -95,12 +98,30 @@
   color: var(--neon-cyan);
   border: 1px solid var(--neon-cyan);
   padding: 8px 18px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.resumeBtn:hover {
+  background: var(--neon-cyan);
+  color: var(--bg-void);
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.contactBtn {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+  padding: 8px 18px;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
 
-.resumeBtn::before {
+.contactBtn::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -110,12 +131,12 @@
   z-index: -1;
 }
 
-.resumeBtn:hover {
+.contactBtn:hover {
   color: var(--bg-void);
   box-shadow: 0 0 20px var(--neon-cyan);
 }
 
-.resumeBtn:hover::before {
+.contactBtn:hover::before {
   transform: translateX(0);
 }
 

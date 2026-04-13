@@ -121,6 +121,26 @@
   opacity: 1;
 }
 
+.card:hover .cardImage {
+  opacity: 0.3;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
 .cardGlow {
   position: absolute;
   inset: 0;

@@ -14,7 +14,7 @@ const skillGroups = [
   {
     label: 'ENGINEERING',
     color: 'yellow',
-    skills: ['TypeScript', 'Node.js', 'Python', 'C#', 'REST APIs', 'Git/GitHub', 'CI/CD', 'VS Code'],
+    skills: ['TypeScript', 'Node.js', 'Next.js', 'Python', 'C#', 'REST APIs', 'Git/GitHub', 'CI/CD', 'VS Code'],
   },
   {
     label: 'SHIPPED ON',

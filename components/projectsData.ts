@@ -8,6 +8,7 @@ export type Project = {
   links: { label: string; url: string }[]
   stats?: string
   featured?: boolean
+  image?: string
 }
 
 export const projects: Project[] = [
@@ -44,6 +45,7 @@ export const projects: Project[] = [
     description: 'Strategically place powerful weapons to defend your tower from waves of enemies. Tower defense with deep upgrade mechanics.',
     tags: ['Unity', 'Mobile', 'Tower Defense', 'iOS'],
     links: [{ label: 'App Store', url: 'https://apps.apple.com/US/app/id6673906256' }],
+    image: '/images/light-fortress.jpg',
   },
   {
     id: 'monkey-cannon',
@@ -53,6 +55,7 @@ export const projects: Project[] = [
     description: 'Control your crazy monkey as waves of enemies try to stand in your way. Wild coconut-smashing jungle action.',
     tags: ['Unity', 'Mobile', 'Arcade', 'iOS'],
     links: [{ label: 'App Store', url: 'https://apps.apple.com/US/app/id6737464231' }],
+    image: '/images/monkey-cannon.jpg',
   },
   {
     id: 'capybara',
@@ -62,6 +65,7 @@ export const projects: Project[] = [
     description: 'Merge capybara heroes, fight slimes, and master grid strategy in this fun RPG mobile game.',
     tags: ['Unity', 'Mobile', 'Merge', 'RPG', 'Android'],
     links: [{ label: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.MiniSports.capybaramergeclash' }],
+    image: '/images/capybara-merge.jpg',
   },
   {
     id: 'house-makeover',
@@ -72,6 +76,7 @@ export const projects: Project[] = [
     tags: ['Unity', 'Mobile', 'Hyper-casual', 'Android'],
     stats: '10M+ Downloads',
     links: [{ label: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.gps.housemakeover.satisfying.clean' }],
+    image: '/images/house-makeover.jpg',
   },
   {
     id: 'smash-frustrating',
@@ -81,7 +86,18 @@ export const projects: Project[] = [
     description: 'Become the ultimate smasher and take on irritating characters in hilarious scenarios.',
     tags: ['Unity', 'Mobile', 'Hyper-casual', 'Android'],
     stats: '10M+ Downloads',
-    links: [{ label: 'Play Store', url: 'https://play.google.com/store/search?q=smash+frustrating+guy&c=apps' }],
+    links: [],
+  },
+  {
+    id: 'build-house-tycoon',
+    title: 'Build House Tycoon',
+    category: 'studio',
+    categoryLabel: 'GENITEAM',
+    description: 'Build and design your dream house in this satisfying tycoon experience.',
+    tags: ['Unity', 'Mobile', 'Tycoon', 'Android'],
+    stats: '100K+ Downloads',
+    links: [{ label: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.genigames.build.house.tycoon' }],
+    image: '/images/build-house-tycoon.jpg',
   },
   {
     id: 'scary-teacher',
@@ -92,23 +108,56 @@ export const projects: Project[] = [
     tags: ['Unity', 'Mobile', 'Action', 'Android/iOS'],
     stats: '100M+ Downloads',
     links: [{ label: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.zakg.scaryteacher.hellgame' }],
+    image: '/images/scary-teacher.jpg',
+  },
+  {
+    id: 'school-escape',
+    title: 'School Escape',
+    category: 'personal',
+    categoryLabel: 'PERSONAL',
+    description: 'Escape from a haunted school filled with ghost witches. A tense survival horror experience.',
+    tags: ['Unity', 'Survival', 'Horror', 'itch.io'],
+    links: [{ label: 'itch.io', url: 'https://rfantasy.itch.io/school-escape' }],
+    image: '/images/school-escape.jpg',
+  },
+  {
+    id: 'dark-adventure',
+    title: 'Dark Adventure',
+    category: 'personal',
+    categoryLabel: 'PERSONAL',
+    description: 'Save the Queen from the Boss Skeleton in this dark fantasy adventure.',
+    tags: ['Unity', 'Adventure', 'Fantasy', 'itch.io'],
+    links: [{ label: 'itch.io', url: 'https://rfantasy.itch.io/dark-adventure' }],
+    image: '/images/dark-adventure.jpg',
+  },
+  {
+    id: 'shattered-fate',
+    title: 'Shattered Fate',
+    category: 'personal',
+    categoryLabel: 'PERSONAL',
+    description: 'An action-adventure game set in a world torn apart by a shattered timeline. Fight to restore what was broken.',
+    tags: ['Unity', 'Action', 'Adventure', 'itch.io'],
+    links: [{ label: 'itch.io', url: 'https://rfantasy.itch.io/shattered-fate' }],
+    image: '/images/shattered-fate.jpg',
   },
   {
     id: 'code-quest',
     title: 'Code Quest',
     category: 'personal',
     categoryLabel: 'PERSONAL',
-    description: 'Learn the basics of C# while playing an RPG adventure game. Gamified programming education.',
+    description: 'Learn basics of C# while playing RPG Adventure Game.',
     tags: ['Unity', 'Education', 'RPG', 'itch.io'],
     links: [{ label: 'itch.io', url: 'https://rfantasy.itch.io/code-quest' }],
+    image: '/images/code-quest.jpg',
   },
   {
     id: 'english-quest',
     title: 'English Quest',
     category: 'personal',
     categoryLabel: 'PERSONAL',
-    description: 'Unique RPG English learning game combining language education with adventure gameplay.',
+    description: 'Unique RPG English Learning Game.',
     tags: ['Unity', 'Education', 'RPG', 'itch.io'],
     links: [{ label: 'itch.io', url: 'https://rfantasy.itch.io/english-quest' }],
+    image: '/images/english-quest.jpg',
   },
 ]

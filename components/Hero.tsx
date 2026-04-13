@@ -74,10 +74,7 @@ export default function Hero() {
                 <p><span className={styles.kw}>const</span> dev = {'{'}</p>
                 <p>&nbsp;&nbsp;name: <span className={styles.str}>"Raheeb Ahmad"</span>,</p>
                 <p>&nbsp;&nbsp;role: <span className={styles.str}>"SWE + Game Dev"</span>,</p>
-                <p>&nbsp;&nbsp;stack: [<span className={styles.str}>"Unity"</span>, <span className={styles.str}>"C#"</span>, <span className={styles.str}>"AI"</span>],</p>
-                <p>&nbsp;&nbsp;shipped: <span className={styles.num}>50</span>,</p>
-                <p>&nbsp;&nbsp;building: <span className={styles.str}>"EditorMind MCP"</span>,</p>
-                <p>&nbsp;&nbsp;location: <span className={styles.str}>"Lahore, PK"</span></p>
+                <p>&nbsp;&nbsp;building: <span className={styles.str}>"The Hawala Network // Steam"</span>,</p>
                 <p>{'}'}</p>
               </div>
             </div>

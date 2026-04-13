@@ -66,21 +66,24 @@ export default function Projects() {
         <div className={styles.grid}>
           {filtered.filter(p => !p.featured).map((p, i) => (
             <div key={p.id} className={styles.card} style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className={styles.cardTop}>
-                <span className={styles.cardBadge}>{p.categoryLabel}</span>
-                {p.stats && <span className={styles.cardStat}>{p.stats}</span>}
-              </div>
-              <h3 className={styles.cardTitle}>{p.title}</h3>
-              <p className={styles.cardDesc}>{p.description}</p>
-              <div className={styles.tags}>
-                {p.tags.map(t => <span key={t} className={styles.tag}>{t}</span>)}
-              </div>
-              <div className={styles.cardLinks}>
-                {p.links.map(l => (
-                  <a key={l.label} href={l.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                    {l.label} →
-                  </a>
-                ))}
+              {p.image && <img src={p.image} alt={p.title} className={styles.cardImage} />}
+              <div className={styles.cardContent}>
+                <div className={styles.cardTop}>
+                  <span className={styles.cardBadge}>{p.categoryLabel}</span>
+                  {p.stats && <span className={styles.cardStat}>{p.stats}</span>}
+                </div>
+                <h3 className={styles.cardTitle}>{p.title}</h3>
+                <p className={styles.cardDesc}>{p.description}</p>
+                <div className={styles.tags}>
+                  {p.tags.map(t => <span key={t} className={styles.tag}>{t}</span>)}
+                </div>
+                <div className={styles.cardLinks}>
+                  {p.links.map(l => (
+                    <a key={l.label} href={l.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                      {l.label} →
+                    </a>
+                  ))}
+                </div>
               </div>
               <div className={styles.cardGlow} />
             </div>
